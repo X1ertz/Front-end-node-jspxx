@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url("../pic/conbg.png");
+    background-size: cover;
+}
+.nav-container ul {
+display: flex;
+align-items: center;
+list-style-type: none;
+background-color: #8a898900;
+color: #fff;
+padding: 10px;
+opacity: 85%;
+
+}
+
+.nav-container ul li {
+margin-right: 30px;
+margin-top: 20px;
+margin-left: 40px;
+
+
+}
+
+.nav-container ul li:last-child {
+margin-right: 0;
+}
+.nav-container ul li a:hover {
+color: #7c7b7a;
+
+}
+.nav-container ul li a {
+text-decoration: none;
+color: #000000;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+.btn-logout {
+background-color: rgba(0, 0, 0, 0.979);
+border: 2px solid black;
+padding: 10px 22px;
+border-radius: 30px;
+cursor: pointer;
+transition: background-color 0.5s ease;
+text-decoration: none;
+color: #f7f7f7;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 14px;
+margin-top: 20px;
+}
+
+.btn-logout:hover {
+background-color: #6e080800;
+color: rgb(0, 0, 0);
+}
+.profile-btn {
+color: #000000;
+border: 2px solid black;
+padding: 9px 22px;
+border-radius: 30px;
+cursor: pointer;
+text-decoration: none;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 14px;
+margin-top: 20px;
+transition: background-color 0.5s ease-in;
+align-self: center;
+}
+
+.nav-container {
+display: flex;
+justify-content: right; /* จัดปุ่มไปทางขวาของ Navbar */
+align-items: center;
+}
+
+
+.line {
+margin-bottom: 60px;
+right: 0;
+font-weight: bolder;
+display: flex;
+justify-content: right; /* จัดเส้นข้อความไปทางซ้าย */
+}
+
+.cozy{
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size: 24px;
+color: #fff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.contact{
+margin-top: 20px;
+font-size: 120px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: #f7f7f7;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.background{
+width: 700px;
+height: 500px;
+padding: 20px;
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 67%;
+background-color: #f7f7f7;
+border-radius: 30px;
+}
+img{
+margin-top: 5px;
+margin-bottom: 20px;
+}
+
+
+.image-container {
+margin-left: 70px;
+position: relative;
+display: inline-block;
+}
+
+.caption {
+position: absolute;
+bottom: 27%;
+left: 170%;
+right: 0;
+background-color: rgba(80, 80, 80, 0.788);
+color: white;
+padding: 25px;
+text-align: center;
+font-size: 28px;
+width: 300px;
+box-sizing: border-box;
+border-radius: 50px;
+}

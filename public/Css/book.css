@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url("../pic/COZY.png");
+    background-size: cover;
+    
+   
+ 
+}
+.nav-container ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: #8a898900;
+    color: #fff;
+    padding: 10px;
+    opacity: 85%;
+    
+}
+
+.nav-container ul li {
+    margin-right: 100px;
+    margin-top: 20px;
+   
+    
+}
+
+.nav-container ul li:last-child {
+    margin-right: 0;
+}
+.nav-container ul li a:hover {
+    color: #cccbca;
+    
+}
+.nav-container ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.register {
+    margin-left: 0.1em;
+
+}
+
+.register a {
+    text-decoration: none;
+    padding: 12px;
+    background-color: #FFDEAD;
+    border-radius: 6px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer; 
+    transition: 0.5s;
+    font-weight: bold;
+
+}
+
+.register a:hover {
+    background-color: rgb(243, 182, 141);
+    color: #000000;
+    
+    
+    
+}
+.login {
+    margin-left: 81em;
+
+}
+
+.login a {
+    text-decoration: none;
+    padding: 12px;
+    background-color: #FFDEAD;
+    border-radius: 6px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer; 
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.login a:hover {
+    background-color: rgb(243, 182, 141);
+    color: #000000;
+}
+.logo{
+    margin-left: 1em;
+    margin-right: 0.5em;
+
+}
+.title{
+    color: #967d1b;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 1000;
+    text-shadow: 2px 2px 4px rgba(134, 90, 90, 0.5);
+    word-spacing: 2px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+footer {
+
+    color: #c0c0c0; 
+    padding: 20px; 
+    position: fixed;
+    bottom: 0; 
+    width: 100%; 
+    margin-right: 20em;
+    
+}
+
+.book-images img {
+    width: 250px; /* ปรับขนาดความกว้างของภาพ */
+    height: 330px; /* ปรับความสูงของภาพให้เป็นสัดส่วน */
+    margin-left: 65px;
+    margin-right: 60px;
+    border-radius: 5%;
+    margin-top: 20px;
+    transition: 0.3s ease-in;
+}
+.book-images img:hover{
+    scale: 120%;
+}
+.author{
+    text-align: center;
+    width: 250px;
+    background-color: #e2dfdf00;
+    margin-top:20px;
+    margin-left: 70px;
+    color: black;
+    font-weight: 1000;
+    font-size: 18px;
+    border-radius: 40px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.type{
+    width: 270px;
+    background-color: #e2dfdf9f;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 55px;
+    margin-bottom: 20px;
+    font-weight: 1000;
+    font-size: 18px;
+    color: #000000;
+}
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.btn-logout {
+    background-color: rgba(0, 0, 0, 0.979);
+    border: 2px solid black;
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    text-decoration: none;
+    color: #f7f7f7;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.btn-logout:hover {
+    background-color: #6e080800;
+    color: rgb(0, 0, 0);
+}
+.profile-btn{
+    
+    color: #000000;
+    border: 2px solid black;
+    padding: 9px 22px;
+    border-radius: 30px;
+    margin-left: 60em;
+    margin-right: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: background-color 0.5s ease-in;
+   
+}
+
+.line{
+    margin-bottom: 90px;
+    margin-left: 100px;
+    font-weight: bolder;
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* ปรับเปลี่ยนเค้าโครงของเมนูเมื่อหน้าจอเล็กกว่า 768px */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* ปรับเปลี่ยนขนาดของภาพเมื่อหน้าจอเล็กกว่า 992px */
+@media screen and (max-width: 992px) {
+    img {
+        width: 100%;
+    }
+}
+
+/* ปรับเปลี่ยนการจัดวางเมื่อหน้าจอเล็กกว่า 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}

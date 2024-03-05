@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-container">
+        <ul>
+            <li><img src="#" alt=""></li>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/book">Books</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/news">News</a></li>
+            <a class="profile-btn" href="/profile/<%= userid %>"><%= username %></a>
+            <form action="/logout" method="POST">
+                <button class="btn-logout"type="submit">Logout</button>
+            </form>
+        </ul>
+    </div>
+
+        <p class="line">___________________________________________________________________</p>
+    </div>
+<div class="textbox">
+    <h1>User Profile</h1>
+    <h2>Username: <%= username %></h2>
+    <h2>ID: <%= userid %></h2>
+    <h2>Email: <%= userdata.email %> </h2>
+
+<div class="text-container"><p> Created: <%= userdata.createdAt %></p>
+    <p>Update: <%= userdata.updatedAt %></p>
+    <p>Status: 💚</p></div>
+    <br><br><br><br>
+    <center><a class="update"href="/update/<%= userid %>">Change Username</a>  
+    <form action="/delete/<%= userid %>">
+        <button  class="delacc"type="submit">Delete Account</button>
+    </form>
+    <a class="return" href="/book"><p class="arrow"><</p></a></center>
+</body>
+</div>
+</html>

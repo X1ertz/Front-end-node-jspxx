@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .column {
+            width: 48%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Web Admin</h1></center>
+    <div class="container">
+        <div class="column">
+            <h2>Books</h2>
+            <ul>
+                <% books.forEach(book => { %>
+                    <li><%= book.bookid %>-<%= book.title %> - <%= book.author %>
+                    <a href="/deletebook/<%= book.bookid %>">Delete</a>
+                <% }); %>
+            </ul>
+            <form action="/Webadmin" method="POST">
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title"><br>
+                
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" name="author"><br>
+                
+                <label for="image">Image URL:( ./pic/)</label><br>
+                <input type="text" id="image" name="image"><br>
+                
+                <label for="typeid">Type ID:</label><br>
+                <input type="text" id="typeid" name="typeid"><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="column">
+            <h2>Types</h2>
+            <ul>
+                <% types.forEach(category => { %>
+                    <li><%= category.typeid %>-<%= category.type %></li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

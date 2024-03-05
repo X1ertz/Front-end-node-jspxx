@@ -1,0 +1,327 @@
+*{
+    margin:0;
+}
+body{
+    background-image: url("../pic/combg.png");
+    background-size: 109%;
+    
+}
+.book-details{
+    text-align: center;
+    justify-content: center;
+}
+.title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #EEEEEE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.type{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: #EEEEEE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.book-details p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: #EEEEEE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+img{
+   width: 550px;
+   height: 800px;
+   margin-left: 36%;
+   border-radius: 15px;
+
+}
+textarea {
+    width: 604px;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    resize: none;
+    margin-left: 34%;
+    text-align: left;
+    direction: ltr;
+    margin-top:2%;
+    border: none;
+    font-size: 26px;
+    font-family: cursive;
+    background-color: #ffffff67;
+    
+  }
+.comments-list {
+    color: #EEEEEE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 20em;
+    font-size: 2em;
+    
+}
+.myBox {
+    border: 2px solid rgba(255, 255, 255, 0.486);
+    padding: 5px;
+    width: 650px;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-left:33%;
+    margin-bottom: 10em;
+    margin-top: 2em;
+    background-color: #A9A9A9;
+    border-radius: 10px;
+    }
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+        background: rgb(0, 0, 0);  
+        border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+        background: #686868;  
+        }
+.usernamef{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    
+}
+.commentf{
+    margin-left: 30px;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #292929;
+    font-weight: bold;
+}
+.btn{
+margin-top: 30px;
+  width: 32.75%;
+  background-color: #00000000;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 1000;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.4s ease; 
+  font-family:cursive;
+  word-spacing: 5px;
+  margin-left: 34%;
+  border: 4px solid rgba(0, 0, 0, 0.404);
+}
+.btn:hover{
+    background-color: #424242;
+    color: #EEEEEE;
+}
+.nav-container ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: #8a898900;
+    color: #fff;
+    padding: 10px;
+    opacity: 85%;
+    margin-left: 95px;
+    
+}
+
+.nav-container ul li {
+    margin-right: 100px;
+    margin-top: 20px;
+    
+   
+    
+}
+
+.nav-container ul li:last-child {
+    margin-right: 0;
+}
+.nav-container ul li a:hover {
+    color: #cccbca;
+    
+}
+.nav-container ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.btn-logout {
+    background-color: rgba(0, 0, 0, 0.979);
+    border: 2px solid black;
+    padding: 12px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    text-decoration: none;
+    color: #f7f7f7;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 70em;
+}
+
+.btn-logout:hover {
+    background-color: #6e080800;
+    color: rgb(0, 0, 0);
+}
+
+.register {
+    margin-left: 0.1em;
+
+}
+
+.register a {
+    text-decoration: none;
+    padding: 12px;
+    background-color: #FFDEAD;
+    border-radius: 6px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer; 
+    transition: 0.5s;
+    font-weight: bold;
+
+}
+
+.register a:hover {
+    background-color: rgb(243, 182, 141);
+    color: #000000;
+    
+    
+    
+}
+.login {
+    margin-left: 81em;
+
+}
+
+.login a {
+    text-decoration: none;
+    padding: 12px;
+    background-color: #FFDEAD;
+    border-radius: 6px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer; 
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.login a:hover {
+    background-color: rgb(243, 182, 141);
+    color: #000000;
+}
+.logo{
+    margin-left: 1em;
+    margin-right: 0.5em;
+    width: 50px;
+    height: 50px;
+
+}
+
+footer {
+
+    color: #c0c0c0; 
+    padding: 20px; 
+    position: fixed;
+    bottom: 0; 
+    width: 100%; 
+    margin-right: 20em;
+    
+}
+.line{
+    margin-bottom: 50px;
+    margin-left: 100px;
+    font-weight: bolder;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  section {
+    height: 110vh;
+    position: relative;
+  }
+ 
+  a#scroll-btn {
+    position: absolute;
+    height: 5em;
+    width: 3.25em;
+    border: 0.5em solid #706e6e;
+    margin-left: 920px;
+    left: 0;
+    right: 0px;
+    bottom: 4.0em;
+    border-radius: 3em;
+    opacity: 65%;
+  }
+  a#scroll-btn:before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1.2em;
+    height: 1.2em;
+    width: 1.2em;
+    background-color: #706e6e;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+
+  }
+  @keyframes move-down {
+    80% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(6em);
+      opacity: 0;
+    }
+  }
+  
+  #section-2 {
+    background-image:  url("../pic/combg2.png");
+    background-size: 100%;
+    color: #ffffff;  
+    justify-content: center;
+    margin-top: 10px;
+
+  
+  }
+  #section-2 h3{
+    font-size: 38px;
+    margin-top: 4.5em;
+    margin-left: 22.80em;
+    
+  }
+  @media screen and (max-width: 500px) {
+    a#scroll-btn {
+      font-size: 12px;
+    }
+}
+.comline{
+    opacity: 50%;
+}

@@ -1,0 +1,195 @@
+*{
+    margin:0;
+}
+body{
+    background-image: url("../pic/bgprofile.png");
+    background-size: cover;
+}
+.text-container {
+    width: 200px; 
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+.textbox {
+    height: 600px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.233);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    font-weight: bold;
+}
+
+
+.textbox h2 {
+    color: #333; /* สีข้อความ */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: left; /* การจัดตำแหน่งข้อความ */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างของข้อความ */
+}
+
+.textbox h1 {
+    color: #000000; /* สีข้อความ */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center; /* การจัดตำแหน่งข้อความ */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.textbox p{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+.update {
+text-decoration: none;
+padding: 12px;
+background-color: rgba(72, 227, 247, 0);
+border-radius: 30px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+cursor: pointer; 
+transition: 0.5s;
+font-weight: 700;
+margin-top: 50px;
+margin-bottom: 10px;
+font-size: 18px;
+border: 2px solid black;
+color: #000000;
+}
+.update:hover{
+    background-color: #000000;
+    color: #f7f7f7;
+}
+.delacc{
+text-decoration: none;
+padding: 12px;
+background-color: #000000;
+border-radius: 30px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+cursor: pointer; 
+transition: 0.5s;
+font-weight: 1000;
+margin-top: 30px;
+margin-bottom: 20px;
+border: none;
+font-size: 18px;
+width: 198px;
+height: 50px;
+border: 2px solid black;
+color: #f7f7f7;
+}
+.delacc:hover{
+    background-color: #6e080800;
+    color: #000000;
+}
+.nav-container ul {
+display: flex;
+align-items: center;
+list-style-type: none;
+background-color: #8a898900;
+color: #fff;
+padding: 10px;
+opacity: 85%;
+
+}
+
+.nav-container ul li {
+margin-right: 100px;
+margin-top: 20px;
+
+
+}
+
+.nav-container ul li:last-child {
+margin-right: 0;
+}
+.nav-container ul li a:hover {
+color: #807e7e;
+
+}
+.nav-container ul li a {
+text-decoration: none;
+color: #000000;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+.btn-logout {
+background-color: rgba(0, 0, 0, 0.979);
+border: 2px solid black;
+padding: 10px 22px;
+border-radius: 30px;
+cursor: pointer;
+transition: background-color 0.5s ease;
+text-decoration: none;
+color: #f7f7f7;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 14px;
+margin-top: 20px;
+}
+
+.btn-logout:hover {
+background-color: #6e080800;
+color: rgb(0, 0, 0);
+}
+.profile-btn{
+
+color: #000000;
+border: 2px solid black;
+padding: 9px 22px;
+border-radius: 30px;
+margin-left: 60em;
+margin-right: 1em;
+cursor: pointer;
+text-decoration: none;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 14px;
+margin-top: 20px;
+transition: background-color 0.5s ease-in;
+
+}
+.title{
+color: black;
+margin-top: 15px;
+padding: 15px;
+font-size: 25px;
+font-weight: 1000;
+text-shadow: 2px 2px 4px rgba(65, 64, 64, 0.5);
+opacity: 70%;
+word-spacing: 2px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.return {
+background-color: #5e5c5c;
+border: none;
+color: white;
+text-decoration: none;
+display:flow-root;
+margin-left: 20%;
+margin: 25px ;
+cursor: pointer;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+transition: 0.5s ease-in;
+}
+.return p{
+margin-top: 14px;
+font-weight: bold;
+font-size: 25px;
+}
+.return:hover{
+background-color: #2b2a2a;
+}
+.line{
+margin-bottom: 90px;
+margin-left: 100px;
+font-weight: bolder;
+}
