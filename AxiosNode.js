@@ -5,15 +5,19 @@ const path = require('path');
 var bodyParser = require('body-parser');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+const cors = require('cors');
 
 // const base_url="http://localhost:3000";
 const base_url="https://back-end-node-jspxx.onrender.com";
 
-app.set('view engine','ejs');
+app.set("views", path.join(__dirname, "/views"));
+app.set("view engine", "ejs");
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:false}));
-
-app.use(express.static('./public'));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(express.static(path.join(__dirname, "/public")));
+app.use(cors());
 
 app.use(cookieParser());
 app.use(session({
