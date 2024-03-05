@@ -7,7 +7,7 @@ const session = require('express-session');
 const cookieParser = require('cookie-parser');
 
 // const base_url="http://localhost:3000";
-const base_url="http://node59947-aungkooncozybook.proen.app.ruk-com.cloud";
+const base_url="https://back-end-node-jspxx.onrender.com";
 
 app.set('view engine','ejs');
 app.use(bodyParser.json());
