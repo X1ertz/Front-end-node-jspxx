@@ -243,7 +243,7 @@ app.post('/Webadmin',async(req,res)=>{
 app.get('/deletebook/:bookid', async (req, res) => {
     try {
         const bookId = req.params.bookid;
-        await axios.delete(`http://localhost:3000/deletebook/${bookId}`);
+        await axios.delete(base_url+'/deletebook/'+bookId);
         console.log('////////////////////', bookId);
         res.redirect('/Webadmin');
     } catch (err) {
