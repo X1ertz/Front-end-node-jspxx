@@ -9,7 +9,7 @@ const cors = require('cors');
 
 // const base_url="http://localhost:3000";
 // const base_url="http://node56943-titiwat28-noderest.proen.app.ruk-com.cloud";
-const base_url="https://back-end-node-jspxx-1.onrender.com";
+// const base_url="https://back-end-node-jspxx-1.onrender.com";
 
 app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "ejs");
